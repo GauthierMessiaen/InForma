@@ -1,0 +1,658 @@
+html {
+    font-size: 1em;
+    color: #000;
+    /* font-family: 'Roboto', sans-serif; */
+    font-family: 'Raleway', sans-serif;
+}
+
+body {
+    /* background-color: rgb(84, 163, 173); */
+    background-color: rgb(252, 254, 255);
+    margin: 0px;
+}
+
+h1 {
+    margin-top: 20px;
+    margin-bottom: 0px;
+    font-size: 2em;
+}
+
+p {
+    margin-top: 20px;
+}
+
+#header {
+    font-family: 'Rajdhani', sans-serif;
+    height: 120px;
+    background-color: rgb(252, 254, 255);
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+}
+
+#header_img_div {
+    display: grid;
+    width: 30%;
+    grid-template-columns: repeat(3,1fr);
+    position: relative;
+    padding-top: 10px;
+}
+
+#header_img1 {
+    display: inline-grid;
+    border-radius: 50%;
+    background-color: rgb(84, 163, 173);
+    width: 100px;
+    height: 100px;
+    grid-column: 1;
+    grid-row: 1;
+    margin-left: 30px;
+}
+
+#header_img2 {
+    display: inline-grid;
+    width: 150px;
+    grid-column: 2;
+    grid-row: 1;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+
+
+/*---------- START Navigation ----------*/
+
+#navigation {
+    grid-column-start: 2;
+    grid-column-end: 13;
+    /* height: 60px; */
+
+    font-size: 1.4em;
+    /* transition: 0.2s; */
+    /* font-weight: 900; */
+}
+
+.navigation_ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0px;
+    text-align: right;
+    padding-left: 5%;
+    margin-top: 50px;
+    justify-content: flex-end;
+    margin-right: 40px;
+}
+
+.navigation_il {
+    text-decoration: none;
+    margin: 10px;
+    padding: 10px;
+}
+
+.navigation_a {
+    text-decoration: none;
+    font-weight: 300;
+    color: #54a3ad;
+    transition: color .8s;
+}
+
+.navigation_a:visited {
+    color: #54a3ad;
+}
+
+.navigation_il:hover .bar{
+    opacity: 1;
+}
+
+.navigation_il:hover .navigation_a{
+    text-decoration: none;
+    color: #186873;
+    transform: 2s;
+}
+
+.bar {
+    transition: all .5s cubic-bezier(.7,0,.3,1);
+    -webkit-opacity: 0;
+    -moz-opacity: 0;
+    opacity: 0;
+    transform: translateY(100%);
+    height: 2px;
+    background-color: #54a3ad;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+#active .navigation_a {
+    color: #186873;
+}
+
+#active .bar {
+    opacity: 1;
+}
+/*---------- END Navigation ----------*/
+
+/*---------- START index.html ----------*/
+.block1 {
+    background-image: url(../images/foto1.jpeg);
+    background-position: center;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    /* filter: grayscale(100%); */
+    height: 400px;
+
+    text-align: center;
+    padding-top: 60px;
+    font-size: 2em;
+    color: #fff;
+}
+.block1 h1 {
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+
+.block1 > p {
+    margin-top: 0px;
+}
+
+.block2 {
+    margin-top: 60px;
+    
+}
+
+.b2_text {
+    text-align: center;
+    padding-left: 10%;
+    padding-right: 10%;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.b2_text p {
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.btn_a {
+    text-decoration: none;
+}
+
+.btn {
+    /* -- remove all button styling --*/
+    background: transparent;
+    box-shadow: 0px 0px 0px transparent;
+    border: 0px solid transparent;
+    text-shadow: 0px 0px 0px transparent;
+
+    /* -- new button css --*/
+    color: #54a3ad;
+    border: 1px solid #54a3ad;
+    transition: color 1s, border 1s, background-color 1s;
+    border-radius: 31px;
+
+}
+
+.btn:hover {
+    cursor: pointer;
+    color: rgb(252, 254, 255);
+    /* color: #186873; */
+    border: 1px solid #186873;
+    transform: 2s;
+    background-color: #54a3ad;
+}
+.btn_block {
+    margin-top: 40px;
+    padding: 10px 20px 10px 20px;
+    font-size: 1.2em;
+}
+
+.btn_block:focus {
+    outline: none;
+}
+
+
+
+.block3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 70px;
+}
+
+.b3-left {
+    margin-right: 100px;
+    text-align: center;
+}
+
+.b3-right {
+    margin-left: 100px;
+    text-align: center;
+}
+
+.block3 p {
+    margin-bottom: 20px;
+}
+/*---------- END index.html ----------*/
+
+/*---------- START contact.html ----------*/
+
+.contact {
+    width: 100%;
+    min-height: 100vh;
+}
+
+.contact_title {
+    width: 100%;
+    text-align: center;
+    background-color: rgb(84, 163, 173);
+    height: 100px;
+    padding-top: 20px;
+    color:white
+    
+}
+
+.contact_line {
+    background-image: url(../images/foto7.jpeg);
+    background-size: cover;
+    background-position: 50% 30%;
+}
+
+.contact_wrap {
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 80px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding-bottom: 30px;
+}
+
+.contact_info {
+    grid-column: 1;
+    grid-row: 1;
+
+    margin-bottom: auto;
+    margin-right: auto;
+    padding: 30px;
+    padding-top: 10px;
+    background: rgba(84, 163, 173, 0.7);
+    border-radius: 10px 30Px;
+    margin-top: 50px;
+}
+
+.contact_form {
+    grid-column: 2;
+    grid-row: 1;
+    margin-left: 40px;
+    margin-top: 30px;
+}
+
+.input_wrap {
+    width: 100%;
+    background-color: #fff;
+    border-radius: 31px;
+    margin-bottom: 16px;
+    position: relative;
+    z-index: 1;
+}
+
+.input {
+    position: relative;
+    display: block;
+    width: 100%;
+    border-radius: 31px;
+    font-size: 15px;
+    color: #8f8fa1;
+    border:none;
+}
+
+input.input {
+  height: 40px;
+  padding: 0 20px 0 20px;
+}
+
+
+textarea.input {
+  min-height: 140px;
+  max-width: 100%;
+  padding: 10px 20px 0 20px;
+  font: inherit;
+}
+
+.input:focus {
+    outline: none;
+}
+
+.form_btn {
+    /* -- remove all button styling --*/
+    background: transparent;
+    box-shadow: 0px 0px 0px transparent;
+    border: 0px solid transparent;
+    text-shadow: 0px 0px 0px transparent;
+
+    /* -- new button css --*/
+    color: #54a3ad;
+    border: 1px solid #54a3ad;
+    background-color: rgb(252, 254, 255);
+    transition: color 1s, border 1s, background-color 1s;
+    border-radius: 31px;
+
+    padding: 5px 10px 5px 10px;
+    font-size: 1.1em;
+}
+
+.form_btn:hover {
+    cursor: pointer;
+    color: rgb(252, 254, 255);
+    border: 1px solid #186873;
+    transform: 2s;
+    background-color: #54a3ad;
+}
+
+
+.map {
+    width: 100vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*---------- END contact.html ----------*/
+
+/*---------- START whatIsPilates.html ----------*/
+
+.blue-back {
+    background-color: rgb(84, 163, 173);
+}
+
+.white {
+    color: white;;
+}
+
+#whatIsPilates {
+    display: flex;
+    flex-direction: column;
+}
+
+/* -- ICONS -- */
+#wip-who {
+    height: 285;
+    width: 100vw;
+
+    display: flex;
+    flex-direction: column;
+}
+
+#wip-who-title {
+    text-align: center;
+    font-size: 26px;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+#wip-who-icons {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.wip-who-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.wip-who-item:nth-child(even) img {
+    margin-top: 10px;
+}
+
+.wip-who-item:nth-child(odd) img {
+    margin-bottom: 10px;
+}
+
+.wip-who-item span {
+    font-size: 23px;
+    font-weight: 500;
+}
+
+.wip-who-item img {
+    height: 80px;
+}
+
+
+#wip-icon-3 {
+    height: 90px;
+}
+
+#wip-icon-4 {
+    height: 70px;
+}
+
+.wip-who-item div {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+/* -- TEXT -- */
+#wip-who2 {
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+    height: 350px;
+}
+
+#wip-who-text {
+    display: flex;
+    flex-direction: column;
+    width: 50vw;
+    justify-content: center;
+    align-items: center;
+}
+
+    #wip-who-text1 {
+        display: flex;
+        flex-direction: column;
+        width: 420px;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+    }
+
+        #wip-who-t1 {
+            font-size: 26px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            margin-top: -30px;
+        }
+
+        #wip-who-t2 {
+            font-size: 18px;
+            text-align: center;
+            font-weight: 600;
+        }
+    #wip-who-text2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-end;
+
+        width: inherit;
+        height: 100%;
+        font-weight: bold;
+        margin-right: 300px;
+        text-align: left;
+    }
+        #wip-who-text2 div {
+            width: 390px;
+        }
+        #wip-who-t3 {
+            font-size: 22px;
+            margin-bottom: 20px;
+            color: white;
+        }
+
+        .wip-who-t4 {
+            color: rgba(0, 0, 0, 0.8);
+            font-size: 18px;
+            margin-bottom: 5px;
+            margin-top: 5px;
+        }
+
+#wip-who-img {
+    width: 50vw;
+    background-image: url(../images/icons/man.jpg);
+    background-size: cover;
+}
+
+/*---------- END whatIsPilates.html ----------*/
+
+
+/*---------- START studio.html ----------*/
+.studio {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0 4px;
+}
+
+.studio-column {
+    max-width: 250px;
+    padding: 0 4px;
+}
+
+.studio-column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+  }
+
+/*---------- END studio.html ----------*/
+
+
+/*---------- START offers.html ----------*/
+.offers {
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    grid-template-rows: repeat(7, 110px);
+    margin-top: 20px;
+}
+
+
+#offers_title {
+    grid-row: 1;
+    grid-column: 2 / 5;
+
+    margin-right: 90px;
+    color: rgb(84, 163, 173);
+}
+
+#offers_text1 {
+    grid-row: 2;
+    grid-column: 2 / 5;
+    margin-right: 90px;
+}
+
+#offers_text2 {
+    grid-row: 3;
+    grid-column: 2 / 5;
+    margin-right: 90px;
+}
+
+#offers_text3 {
+    grid-row: 4;
+    grid-column: 2 / 5;
+    margin-right: 90px;
+}
+
+#offers_img1 {
+    grid-row: 5 / 8;
+    grid-column: 1 / 6;
+    object-fit: cover;
+    width: 100%;
+
+    transform: scaleX(-1);
+    margin-top: 30px;
+}
+
+#offers_img2 {
+    grid-row: 1 / 5;
+    grid-column: 5 / 13;
+    object-fit: cover;
+    width: 100%;
+
+}
+
+#offers_price {
+    grid-row: 4 / 6;
+    grid-column: 6 / 13;
+    margin-left: 70px;
+
+    background-color: rgb(84, 163, 173);
+    color:white;
+
+    padding-left: 50px;
+}
+
+#offers_info {
+    grid-row: 6 / 8;
+    grid-column: 7 / 13;
+}
+
+.blue {
+    color: rgb(84, 163, 173);
+}
+
+#offers_info_p2 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+#offers_info h3 {
+    margin-bottom: 0px;
+    margin-top: 30px;
+    font-size: 1em;
+}
+#offers_info_p3 {
+    margin-top: 5px;
+    margin-bottom: 0px;
+    margin-left: 30px;
+}
+#offers_info_p3 > span{
+    margin-top: 10px;
+}
+
+#offers_price_s1 {
+    margin-left: 25px;
+}
+#offers_price_d1 {
+    margin-top:20px;
+}
+#offers_price_d2 {
+    margin-left: 100px;
+    margin-top: -20px;
+}
+/*---------- END offers.html ----------*/
+
+
+
+/*---------- START about.html ----------*/
+#about {
+    background-image: url("../images/foto4.jpeg");
+    height: 80%;
+    background-position: center;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#about_text {
+    width: 800px;
+    background-color: rgb(84, 163, 173);
+    color: white;
+    padding: 40px;
+}
+
+/*---------- END about.html ----------*/
